@@ -6,10 +6,10 @@ const app = express();
 app.use(cors({origin: true, credentials: true}))
 app.use(bodyParser.json());
 var connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: null,
-  database: "sigvitas",
+  host: "sql6.freemysqlhosting.net",
+  user: "sql6692005",
+  password: "sbWKJLbcVQ",
+  database: "sql6692005",
 });
 
 app.post("/add-user", (req, res) => {
